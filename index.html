@@ -1,1 +1,203 @@
-Coming soon
+<!DOCTYPE html>
+<html lang="it">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            :root {
+                --nav-height: 4em;
+                --nav-background-color: #7B5014;
+                --nav-text-color: white;
+                --footer-height: 4em;
+                --footer-background-color: #7B5014;
+                --footer-text-color: white;
+                --even-background-color: #A4BDA4;
+                --even-text-color: #1E1818;
+                --odd-background-color: #E9E6DA;
+                --odd-text-color: #504646;
+                --section-width: 600px;
+                --footer-width: 800px;
+                --spacing: 40px;
+            }
+            html {
+                scroll-behavior: smooth;
+            }
+            body {
+                font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', 'Segoe UI Emoji', 'Apple Color Emoji', 'Noto Color Emoji', sans-serif;
+                margin: 0;
+                padding: 0;
+                line-height: 1.4;
+                word-wrap: break-word;
+                text-rendering: optimizeLegibility;
+            }
+            nav {
+                height: var(--nav-height);
+                width: 100%;
+                background-color: var(--nav-background-color);
+                color: var(--nav-text-color);
+                position: sticky;
+                top: 0;
+                left: 0;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: var(--spacing);
+                font-size: 2vmin;
+                overflow: hidden;
+            }
+            nav a {
+                text-decoration: none;
+                color: var(--nav-text-color);
+            }
+            nav a:visited {
+                color: var(--nav-text-color);
+            }
+            nav a.active {
+                text-decoration: underline;
+            }
+            footer {
+                height: var(--footer-height);
+                min-height: var(--footer-height);
+                width: 100%;
+                background-color: var(--footer-background-color);
+                color: var(--footer-text-color);
+                position: sticky;
+                bottom: 0;
+                left: 0;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+                text-align: center;
+            }
+            footer > * {
+                max-width: var(--footer-width);
+            }
+            footer svg {
+                width: 1em;
+                height: 1em;
+                color: var(--footer-text-color);
+                vertical-align: middle;
+                display: inline-block;
+            }
+            footer a {
+                color: var(--footer-text-color);
+            }
+            footer a:visited {
+                color: var(--footer-text-color);
+            }
+            section {
+                min-height: calc(100vh - var(--nav-height) - var(--footer-height));
+                scroll-margin-top: var(--nav-height);
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+                padding: 0 var(--spacing);
+            }
+            section > * {
+                max-width: var(--section-width);
+            }
+            section:nth-child(even) {
+                background-color: var(--even-background-color);
+                color: var(--even-text-color)
+            }
+            section:nth-child(odd) {
+                background-color: var(--odd-background-color);
+                color: var(--odd-text-color);
+            }
+            @media screen and (max-width: 640px) {
+                :root {
+                    --nav-height: 0;
+                    --footer-height: 8em;
+                }
+            }
+            @media screen and (max-width: 760px) {
+                footer br {
+                    display: none;
+                }
+            }
+        </style>
+        <title>Boscando - progetto educativo</title>
+        <meta name="description" content="Progetto educativo e centro estivo per bambini dai 3-12 anni, all’aperto e nella natura di Ponte Nelle Alpi (BL)">
+    </head>
+    <body>
+        <svg style="display: none !important;">
+            <symbol id="email" width="1em" height="1em" viewBox="0 0 24 24"><path fill="currentColor" d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2m0 4l-8 5l-8-5V6l8 5l8-5z"/></symbol>
+            <symbol id="map" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2C7.589 2 4 5.589 4 9.995C3.971 16.44 11.696 21.784 12 22c0 0 8.029-5.56 8-12c0-4.411-3.589-8-8-8m0 12c-2.21 0-4-1.79-4-4s1.79-4 4-4s4 1.79 4 4s-1.79 4-4 4"/></symbol>
+            <symbol id="phone" width="1em" height="1em" viewBox="0 0 32 32"><path fill="currentColor" d="M10.25 2A3.25 3.25 0 0 0 7 5.25v21.5A3.25 3.25 0 0 0 10.25 30h11.5A3.25 3.25 0 0 0 25 26.75V5.25A3.25 3.25 0 0 0 21.75 2zM14 24h4a1 1 0 1 1 0 2h-4a1 1 0 1 1 0-2"/></symbol>
+        </svg>
+        <nav>
+            <a href="#crescere-con-boscando">Crescere con Boscando</a>
+            <a href="#la-nostra-associazione">La nostra associazione</a>
+            <a href="#maestro-bosco">Maestro bosco</a>
+            <a href="#le-radici-del-sapere">Le radici del sapere</a>
+            <a href="#boscando-estate">Boscando l’estate</a>
+        </nav>
+        <main>
+            <section id="crescere-con-boscando">
+                <h2>Crescere con Boscando</h2>
+                <p>
+                    <b>B</b>ellezza <b>O</b>pportunità <b>S</b>coperta <b>C</b>ultura <b>A</b>rmonia <b>N</b>atura <b>D</b>emocrazia <b>O</b>riginalità
+                </p>
+                <p>
+                    Queste sono le prime parole che hanno dato modo a Boscando di prendere forma, germogliando e mettendo radici che raccontano molto di ciò che è il nostro pensiero. A queste se ne sono aggiunte altre ed altre ancora, come crescita, esperienza, rispetto e territorio. La possibilità di crescere ed apprendere a stretto contatto con la Natura e in sinergia con essa è il nostro più grande intento ed obiettivo.
+                </p>
+                <p>
+                    In Boscando è di vitale importanza l’approccio educativo democratico che caratterizza e costituisce il pensiero dell’associazione ed è condiviso con ogni suo membro indipendentemente dall’età. Nel contesto didattico questo riconosce a tutti i partecipanti del gruppo la capacità di decidere individualmente così come in gruppo, creando l’opportunità di scegliere i propri ambiti organizzativi e condividere in modo paritario le scelte individuali e collettive. In questo senso la relazione educativa adulto-bambino affonda le sue radici sul riconoscimento delle capacità personali e dei propri talenti quali mezzi imprescindibili per lo sviluppo dell’autonomia e della libertà di scelta. Questo processo pone al centro la persona nella sua interezza, sia dal punto di vista corporeo e sensoriale, sia emotivo ed espressivo. Ne riconosce l’unicità comprendendo lo sviluppo di ogni talento e capacità personale in modo armonico e integrale. In questo contesto e in sinergia con l’ambiente naturale, l’educatore-accompagnatore affianca e facilita il comune processo della scoperta, della creazione e del fare esperienza. Boscando è imparare dagli alberi, toccare la terra, osservare i tanti colori dei fiori. È vivere il ritmo delle stagioni ed esserne parte.
+                </p>
+            </section>
+            <section id="la-nostra-associazione">
+                <h2>La nostra associazione</h2>
+                <p>
+                    L'associazione “Boscando” è nata da un gruppo di genitori ed educatori primariamente con l'intento e la volontà di co-creare un luogo pensato per i bambini e per la loro crescita in sinergia con il territorio naturale che ci ospita. Il nostro “campo base” è il prato che abbiamo chiamato “La Goccia” al centro del quale c’è la nostra Jurta circondata dal bosco nel cuore delle Dolomiti Bellunesi. Questa struttura tipicamente è un’abitazione adottata da molti popoli nomadi del’Asia. È costituita da uno scheletro di legno solitamente ricoperta da tappeti di feltro di lana di pecora ed è assemblata nella sua caratteristica forma circolare. Così come per i popoli che fin dall’antichità la utilizzano come riparo e come luogo dal forte simbolismo, anche per noi rappresenta uno spazio in cui si incontrano rispetto, educazione, relazione e contatto con la natura. Abbracciamo l'ecosostenibilità e la tutela dell’ambiente, principio che è alla base di ogni nostra proposta educativa e formativa. Boscando non è però solo questo, infatti l'intento comune è quello di condividere questo luogo e le proposte educative, formative e culturali che lo costituiscono. Questo perchè per noi non è soltanto un luogo fisico e statico, ma è primariamente un “cerchio di persone” vivo, in costante crescita e trasformazione, che accoglie pensieri, idee, talenti e molto altro dando modo di esprimerli ed agirli.
+                </p>
+            </section>
+            <section id="maestro-bosco">
+                <h2>Maestro Bosco: Progetto educativo 3-6 anni</h2>
+                <p>
+                    Il percorso pensato per i più piccoli si svolge all’aperto, questo perché crediamo fortemente nello sviluppo e nella crescita del bambino in contesto naturale fin dai primi anni. Immersi nella natura, ci dedichiamo a manipolare la terra, raccogliere foglie, rametti e sassi, correre nei prati e molto di più... imparando il naturale trascorrere del tempo col passare delle stagioni. Nella vita in natura il bambino sperimenta in modo spontaneo e non indotto il problem solving, cercando autonomamente soluzioni creative e coerenti con il proprio modo di essere. Sviluppa la propria autostima, il contatto con il proprio vissuto emotivo e la motricità. Il gruppo è una grande risorsa che quotidianamente offre la possibilità di crescere dal punto di vista relazionale e del rispetto per sé stessi e per l'altro. Nel contesto gruppale impariamo a comprendere le regole e l'ascolto migliorando l'attenzione.
+                </p>
+            </section>
+            <section id="le-radici-del-sapere">
+                <h2>Le Radici del Sapere: Progetto educativo 6-11 anni</h2>
+                <p>
+                    L’educazione e la didattica sono pensati su misura e dedicati al percorso individuale di ogni bambino, con attività e laboratori specifici per favorire la crescita e l’apprendimento a stretto contatto con la natura. Una grande risorsa è il contesto gruppale che ogni giorno offre la possibilità di confronto e di crescita relazionale. Nel gruppo impariamo ad autogestirci, sperimentiamo la convivenza e comprendiamo il rispetto delle regole. Impariamo a prenderci cura di noi come dell'altro, così come a rispettare noi stessi e il gruppo. Le attività si svolgono alternando momenti didattici nella nostra Jurta e attività all’aperto nei territori circostanti tra prati, boschi e torrenti.
+                </p>
+            </section>
+            <section id="boscando-estate">
+                <h2>Boscando l’estate: Centro estivo 3-12 anni</h2>
+                <p>
+                    L’estate in Boscando si svolge all’aperto in contesti naturali. Pur mantenendo la nostra Jurta come punto di ritrovo e come “campo base” siamo spesso itineranti tra i prati, i boschi e i torrenti che abbiamo nel territorio, con attività e laboratori pensati coerentemente con le esigenze e le peculiarità dei bambini partecipanti. Il contatto con la natura aiuta lo sviluppo dell’autostima e il contatto con il proprio vissuto emotivo e corporeo. Il contesto gruppale ci offre ogni giorno la possibilità di confronto e di crescita relazionale, sperimentando la convivenza e comprendendo il rispetto delle regole. Impariamo a prenderci cura di noi come dell'altro, così come a rispettare noi stessi, il gruppo e l’ambiente che ci circonda.
+                </p>
+            </section>
+        </main>
+        <footer>
+            <p>
+                Vieni a trovarci in Ponte Nelle Alpi (BL)! Prendi un appuntamento, così ti dedicheremo il giusto tempo!
+                <br/>
+                <svg><use href="#map"/></svg><a href="https://www.google.com/maps/place/46%C2%B011'51.3%22N+12%C2%B017'03.8%22E/@46.197587,12.2815304,591m/" target="_blank" rel="noopener noreferrer nofollow">46°11'51.3"N 12°17'03.8"E</a>
+                <svg><use href="#phone"/></svg><a href="tel:+39 327 068 3837">+39 327 068 3837</a>
+                <svg><use href="#email"/></svg><a href="mailto:info@boscando.it">info@boscando.it</a>
+            </p>
+        </footer>
+        <script>
+            (function syncActiveNavLinkWithScrollPosition() {
+                const observer = new IntersectionObserver((entries) => {
+                    entries.forEach((entry) => {
+                        const navLink = document.querySelector(`nav a[href="#${entry.target.id}"]`);
+                        if (navLink) {
+                            navLink.classList.toggle("active", entry.isIntersecting);
+                        }
+                    });
+                }, {
+                    rootMargin: "0px",
+                    threshold: 0.6,
+                });
+                document.querySelectorAll("section").forEach((section) => {
+                    observer.observe(section);
+                });
+            }());
+        </script>
+    </body>
+</html>

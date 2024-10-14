@@ -9,6 +9,7 @@
                 --nav-background-color: #7B5014;
                 --nav-text-color: white;
                 --footer-height: 4em;
+                --footer-padding: 10px;
                 --footer-background-color: #7B5014;
                 --footer-text-color: white;
                 --even-background-color: #A4BDA4;
@@ -65,7 +66,8 @@
             footer {
                 height: var(--footer-height);
                 min-height: var(--footer-height);
-                width: 100%;
+                width: calc(100% - 2 * var(--footer-padding));
+                padding: var(--footer-padding);
                 background-color: var(--footer-background-color);
                 color: var(--footer-text-color);
                 position: sticky;
@@ -144,7 +146,7 @@
             @media screen and (max-width: 640px) {
                 :root {
                     --nav-height: 0;
-                    --footer-height: 8em;
+                    --footer-height: calc(8em - 2 * var(--footer-padding));
                 }
                 section p {
                     font-size: larger;

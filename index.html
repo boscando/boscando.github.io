@@ -118,6 +118,9 @@
                 max-height: 100%;
                 object-fit: contain;
             }
+            section > .images + .images {
+                margin-top: 1em;
+            }
             section:nth-child(even) {
                 background-color: var(--even-background-color);
                 color: var(--even-text-color)
@@ -142,6 +145,9 @@
                 content: "";
                 margin-bottom: 0.5em;
                 display: block;
+            }
+            section h2 + h3 {
+                margin: 0;
             }
             @media screen and (max-width: 640px) {
                 :root {
@@ -177,7 +183,6 @@
             <symbol id="phone" width="1em" height="1em" viewBox="0 0 32 32"><path fill="currentColor" d="M10.25 2A3.25 3.25 0 0 0 7 5.25v21.5A3.25 3.25 0 0 0 10.25 30h11.5A3.25 3.25 0 0 0 25 26.75V5.25A3.25 3.25 0 0 0 21.75 2zM14 24h4a1 1 0 1 1 0 2h-4a1 1 0 1 1 0-2"/></symbol>
             <symbol id="flower" viewBox="0 0 24 24"><path fill="currentColor" d="M3 13a9 9 0 0 0 9 9c0-5-4.03-9-9-9m9-7.5A2.5 2.5 0 0 1 14.5 8a2.5 2.5 0 0 1-2.5 2.5A2.5 2.5 0 0 1 9.5 8A2.5 2.5 0 0 1 12 5.5m-6.4 4.75a2.5 2.5 0 0 0 2.5 2.5c.53 0 1.02-.17 1.4-.44v.19A2.5 2.5 0 0 0 12 15a2.5 2.5 0 0 0 2.5-2.5v-.19c.38.27.87.44 1.4.44a2.5 2.5 0 0 0 2.5-2.5c0-1-.59-1.85-1.43-2.25c.84-.4 1.43-1.26 1.43-2.25a2.5 2.5 0 0 0-2.5-2.5c-.53 0-1.02.16-1.4.44V3.5A2.5 2.5 0 0 0 12 1a2.5 2.5 0 0 0-2.5 2.5v.19c-.38-.28-.87-.44-1.4-.44a2.5 2.5 0 0 0-2.5 2.5c0 .99.59 1.85 1.43 2.25c-.84.4-1.43 1.25-1.43 2.25M12 22a9 9 0 0 0 9-9c-5 0-9 4-9 9"/></symbol>
             <symbol id="toys" viewBox="0 0 24 24"><path fill="currentColor" d="M7 20q-1.125 0-1.963-.712T4.05 17.45q-.95-.5-1.5-1.425T2 14q0-1.325.762-2.363T4.8 10.2L3 8.4l-.3.3q-.275.275-.7.275T1.3 8.7T1.025 8t.275-.7l2-2q.275-.275.7-.275t.7.275t.275.7t-.275.7l-.3.3l1.4 1.4l.8-2.35q.3-.925 1.088-1.487T9.45 4h5.1q.975 0 1.763.563T17.4 6.05l1.35 4.05q1.425.275 2.338 1.375T22 14q0 1.1-.55 2.025t-1.5 1.425q-.15 1.125-.987 1.838T17 20q-.95 0-1.713-.55T14.2 18H9.8q-.325.9-1.088 1.45T7 20m.4-10H11V6H9.45q-.325 0-.575.188T8.5 6.7zm5.6 0h3.6l-1.1-3.3q-.125-.325-.375-.513T14.55 6H13zm-6 8q.425 0 .713-.288T8 17t-.288-.712T7 16t-.712.288T6 17t.288.713T7 18m10 0q.425 0 .713-.288T18 17t-.288-.712T17 16t-.712.288T16 17t.288.713T17 18"/></symbol>
-            <symbol id="lawnmower" viewBox="0 0 24 24"><path fill="currentColor" d="m11.95 14l-1.13-2h3.94c.74 0 1.45.43 1.79 1.11L17 14zM23 18c0 1.66-1.34 3-3 3c-1.3 0-2.4-.84-2.82-2h-5.53c-.56 1.18-1.76 2-3.15 2s-2.59-.82-3.15-2H2c-.55 0-1-.45-1-1v-7c0-.33.17-.64.44-.83c.27-.17.62-.22.93-.1l5.06 2.02L3.42 5H1V3h3.58l6.79 12H20c1.66 0 3 1.34 3 3M7.34 14.21L3 12.5V17h2.05c.19-1.3 1.08-2.36 2.29-2.79M10 17.5c0-.83-.67-1.5-1.5-1.5S7 16.67 7 17.5S7.67 19 8.5 19s1.5-.67 1.5-1.5m11 .5c0-.55-.45-1-1-1s-1 .45-1 1s.45 1 1 1s1-.45 1-1"/></symbol>
             <symbol id="tools" viewBox="0 0 24 24"><path fill="currentColor" d="M6 10h6V8.5H6zm0-2.5h6V6H6zM17 11V5h2l1 1v1h3v2h-3v1l-1 1zM6 15.5V13q-1.65 0-2.825-1.175T2 9V7q0-1.65 1.175-2.825T6 3h10v10h-4v2.5zM4 21v-4.5h10V21z"/></symbol>
             <symbol id="materials" viewBox="0 0 512 512"><path fill="currentColor" d="m109.46 244.04l134.58-134.56l-44.12-44.12l-61.68 61.68a7.92 7.92 0 0 1-11.21 0l-11.21-11.21c-3.1-3.1-3.1-8.12 0-11.21l61.68-61.68l-33.64-33.65C131.47-3.1 111.39-3.1 99 9.29L9.29 99c-12.38 12.39-12.39 32.47 0 44.86zm388.47-116.8c18.76-18.76 18.75-49.17 0-67.93l-45.25-45.25c-18.76-18.76-49.18-18.76-67.95 0l-46.02 46.01l113.2 113.2zM316.08 82.71l-297 296.96L.32 487.11c-2.53 14.49 10.09 27.11 24.59 24.56l107.45-18.84L429.28 195.9zm186.63 285.43l-33.64-33.64l-61.68 61.68c-3.1 3.1-8.12 3.1-11.21 0l-11.21-11.21c-3.09-3.1-3.09-8.12 0-11.21l61.68-61.68l-44.14-44.14L267.93 402.5l100.21 100.2c12.39 12.39 32.47 12.39 44.86 0l89.71-89.7c12.39-12.39 12.39-32.47 0-44.86"/></symbol>
         </svg>
@@ -205,8 +210,8 @@
                     In Boscando è di vitale importanza l’approccio educativo democratico che caratterizza e costituisce il pensiero dell’associazione ed è condiviso con ogni suo membro indipendentemente dall’età. Nel contesto didattico questo riconosce a tutti i partecipanti del gruppo la capacità di decidere individualmente così come in gruppo, creando l’opportunità di scegliere i propri ambiti organizzativi e condividere in modo paritario le scelte individuali e collettive.
                 </p>
                 <div class="images">
-                    <img src="/assets/circle.webp" alt="" loading="lazy" />
                     <img src="/assets/climbing.webp" class="mobile" alt="" loading="lazy" />
+                    <img src="/assets/book2.webp" alt="" loading="lazy" />
                 </div>
                 <p>
                     In questo senso la relazione educativa adulto-bambino affonda le sue radici sul riconoscimento delle capacità personali e dei propri talenti quali mezzi imprescindibili per lo sviluppo dell’autonomia e della libertà di scelta. Questo processo pone al centro la persona nella sua interezza, sia dal punto di vista corporeo e sensoriale, sia emotivo ed espressivo. Ne riconosce l’unicità comprendendo lo sviluppo di ogni talento e capacità personale in modo armonico e integrale. In questo contesto e in sinergia con l’ambiente naturale, l’educatore-accompagnatore affianca e facilita il comune processo della scoperta, della creazione e del fare esperienza. Boscando è imparare dagli alberi, toccare la terra, osservare i tanti colori dei fiori. È vivere il ritmo delle stagioni ed esserne parte.
@@ -218,15 +223,16 @@
                     L'associazione “Boscando” è nata da un gruppo di genitori ed educatori primariamente con l'intento e la volontà di co-creare un luogo pensato per i bambini e per la loro crescita in sinergia con il territorio naturale che ci ospita. Il nostro “campo base” è il prato che abbiamo chiamato “La Goccia” al centro del quale c’è la nostra Jurta circondata dal bosco nel cuore delle Dolomiti Bellunesi.
                 </p>
                 <div class="images">
-                    <img src="/assets/book.webp" alt="" loading="lazy" />
-                    <img src="/assets/dog.webp" alt="" loading="lazy" />
-                    <img src="/assets/river.webp" class="mobile" alt="" loading="lazy" />
+                    <img src="/assets/outside.webp" alt="" loading="lazy" />
+                    <img src="/assets/inside.webp" class="mobile" alt="" loading="lazy" />
                 </div>
                 <p>
                     Questa struttura tipicamente è un’abitazione adottata da molti popoli nomadi del’Asia. È costituita da uno scheletro di legno solitamente ricoperta da tappeti di feltro di lana di pecora ed è assemblata nella sua caratteristica forma circolare. Così come per i popoli che fin dall’antichità la utilizzano come riparo e come luogo dal forte simbolismo, anche per noi rappresenta uno spazio in cui si incontrano rispetto, educazione, relazione e contatto con la natura.
                 </p>
                 <div class="images">
-                    <img src="/assets/markers.webp" class="mobile" alt="" loading="lazy" />
+                    <img src="/assets/dog.webp" alt="" loading="lazy" />
+                    <img src="/assets/river.webp" class="mobile" alt="" loading="lazy" />
+                    <div><img src="/assets/hay.webp" alt="" loading="lazy" /></div>
                 </div>
                 <p>
                     Abbracciamo l'ecosostenibilità e la tutela dell’ambiente, principio che è alla base di ogni nostra proposta educativa e formativa. Boscando non è però solo questo, infatti l'intento comune è quello di condividere questo luogo e le proposte educative, formative e culturali che lo costituiscono. Questo perchè per noi non è soltanto un luogo fisico e statico, ma è primariamente un “cerchio di persone” vivo, in costante crescita e trasformazione, che accoglie pensieri, idee, talenti e molto altro dando modo di esprimerli ed agirli.
@@ -235,7 +241,16 @@
             <section id="maestro-bosco">
                 <h2>Maestro Bosco: Progetto educativo 3-6 anni</h2>
                 <p>
-                    Il percorso pensato per i più piccoli si svolge all’aperto, questo perché crediamo fortemente nello sviluppo e nella crescita del bambino in contesto naturale fin dai primi anni. Immersi nella natura, ci dedichiamo a manipolare la terra, raccogliere foglie, rametti e sassi, correre nei prati e molto di più... imparando il naturale trascorrere del tempo col passare delle stagioni. Nella vita in natura il bambino sperimenta in modo spontaneo e non indotto il problem solving, cercando autonomamente soluzioni creative e coerenti con il proprio modo di essere. Sviluppa la propria autostima, il contatto con il proprio vissuto emotivo e la motricità. Il gruppo è una grande risorsa che quotidianamente offre la possibilità di crescere dal punto di vista relazionale e del rispetto per sé stessi e per l'altro. Nel contesto gruppale impariamo a comprendere le regole e l'ascolto migliorando l'attenzione.
+                    Il percorso pensato per i più piccoli si svolge  all’aperto, questo perché crediamo fortemente nello sviluppo e nella crescita del bambino in contesto naturale fin dai primi anni. Crediamo che la natura, il bosco e i suoi tesori, siano il luogo migliore per poter sviluppare una crescita sana e completa di ogni bambino. Il bosco è pieno di stimoli, dà libertà, ma anche confini, è ricco di conoscenze per la nostra mente ed è in costante cambiamento. Nel bosco i bimbi giocano con materiali naturali, inventano dal nulla, sperimentano, provano e riprovano, non apprendono nella natura ma dalla natura tramite il contatto diretto e l’esperienza. <br />Immersi in essa, ci dedichiamo a manipolare la terra, raccogliere foglie, rametti e sassi, correre nei prati e molto di più… imparando il naturale trascorrere del tempo col passare delle stagioni. Il bosco selvaggio è ricco, mutevole, risponde a molti dei nostri bisogni, ci incoraggia ad imparare l’uno dall’altro, a collaborare, a cercare nuove soluzioni, a sperimentare i nostri limiti: tutti elementi indispensabili per costruire fiducia ed autonomia.
+                </p>
+                <div class="images">
+                    <div><img src="/assets/measure.webp" alt="" loading="lazy" /></div>
+                    <div><img src="/assets/moss.webp" class="mobile" alt="" loading="lazy" /></div>
+                    <div><img src="/assets/bridge.webp" class="mobile" alt="" loading="lazy" /></div>
+                    <div><img src="/assets/line.webp" alt="" loading="lazy" /></div>
+                </div>
+                <p>
+                    Nella vita in natura il bambino sperimenta in modo spontaneo e non indotto il problem solving, cercando autonomamente soluzioni creative e coerenti con il proprio modo di essere.Vivere nel contesto naturale favorisce lo sviluppo della propria autostima, il contatto con il proprio vissuto emotivo e la motricità. Il gruppo è una grande risorsa che quotidianamente offre la possibilità di crescere dal punto di vista relazionale e del rispetto per sé stessi e per l'altro. Nel contesto gruppale impariamo a comprendere le regole e l'ascolto migliorando l'attenzione. Una cosa che accomuna le nostre giornate e a cui diamo molta importanza sono i cerchi del mattino e di chiusura giornata. Sono momenti in cui i bambini si raccontano, si ascoltano, si conoscono, si espongono in maniera del tutto volontaria: momenti fondamentali per loro, per la loro crescita e consapevolezza e per l'unione del gruppo. <br />Non mancano momenti dedicati ad apprendimenti specifici ed affiancati, pensati e realizzati per supportare al meglio ogni membro del gruppo. Attraverso laboratori in natura e in Jurta sperimentiamo materiali naturali, nutriamo la nostra creatività ed impariamo divertendoci tantissime cose. Incontriamo parole nuove, numeri, lettere... ci esercitiamo a tracciare segni, forme e tutte le nostre avventure. <br />Il percorso è pensato per sostenere i bambini e le bambine a vivere all’aria aperta apprendendo e giocando a prescindere dalle condizioni atmosferiche, con la pioggia, con il sole, con la neve ed in qualsiasi stagione nel loro mutare. Nel bosco i bambini mettono alla prova abilità motorie e mentali incredibili. Sviluppano la motricità fine, l'equilibrio, l'empatia, la consapevolezza del proprio corpo e la concentrazione. Tutto si muove e si sviluppa in maniera del tutto naturale, in continua scoperta di sé stessi e del mondo che ci circonda. Ogni giorno è scoperta, è esperienza, è magia!
                 </p>
                 <div class="images">
                     <div><img src="/assets/tree.webp" alt="" loading="lazy" /></div>
@@ -248,12 +263,13 @@
             <section id="le-radici-del-sapere">
                 <h2>Le Radici del Sapere: Progetto educativo 6-11 anni</h2>
                 <p>
-                    L’educazione e la didattica sono pensati su misura e dedicati al percorso individuale di ogni bambino, con attività e laboratori specifici per favorire la crescita e l’apprendimento a stretto contatto con la natura. Una grande risorsa è il contesto gruppale che ogni giorno offre la possibilità di confronto e di crescita relazionale. Nel gruppo impariamo ad autogestirci, sperimentiamo la convivenza e comprendiamo il rispetto delle regole. Impariamo a prenderci cura di noi come dell'altro, così come a rispettare noi stessi e il gruppo. Le attività si svolgono alternando momenti didattici nella nostra Jurta e attività all’aperto nei territori circostanti tra prati, boschi e torrenti.
+                    L’educazione e la didattica sono pensati su misura e dedicati al percorso individuale di ogni bambino, con attività e laboratori specifici per favorire la crescita e l’apprendimento a stretto contatto con la natura. Il nostro obiettivo è quello di garantire ad ogni bimbo-ragazzo di capire e di capirsi, rispettando tempi e modi di ognuno. Siamo convinti che i bambini non siano vasi da riempire, ma fiori da far sbocciare. Cerchiamo di aiutare il bambino a trovare il proprio profondo talento che lo rende unico, e per questo fondamentale, per la nostra comunità e a valorizzarlo nel suo percorso di vita. Ciò avviene con la cura e l’ascolto di noi stessi, del nostro spirito e del nostro corpo. Durante le nostre giornate oltre agli apprendimenti e al gioco in natura ci dedichiamo a dei momenti in gruppo per noi molto importanti, come i cerchi del mattino e di conclusione della giornata. Sono momenti in cui ognuno può raccontarsi, ascoltarsi ed ascoltare l’altro in maniera del tutto volontaria: momenti fondamentali per ciascuno, per la crescita, la consapevolezza nei confronti della propria unicità e allo stesso tempo il senso di appartenenza. <br />Il contesto gruppale è una grande risorsa che ogni giorno offre la possibilità di confronto e di crescita relazionale. Nel gruppo impariamo ad autogestirci, sperimentiamo la convivenza e comprendiamo il rispetto delle regole. Impariamo a prenderci cura di noi come dell'altro, così come a rispettare noi stessi e il gruppo. Le attività si svolgono alternando momenti didattici nella nostra Jurta e attività all’aperto nei territori circostanti tra prati, boschi e torrenti. Usciamo spesso per trovare il nostro collegamento col mondo e per farci insegnare da esso. Quale modo migliore di imparare i principi scientifici che regolano il nostro universo, se non tastandoli ogni giorno con mano. <br />I genitori, all’interno del progetto, svolgono un ruolo fondamentale sia per quanto riguarda l’educazione dei propri ragazzi, sia per quanto riguarda l’aiuto materiale per poter continuare a far vivere il progetto. Oltre ad essere un aiuto necessario, è anche un modo per far assaporare ai bimbi il potere e la bellezza dello stare insieme. Vedere persone che si aiutano, senza chiedere nulla in cambio, che condividono il proprio tempo, le proprie esperienze e conoscenze, fa capire fin da subito quali enormi poteri e vantaggi può offrire la comunità, la condivisione, la collaborazione e l’aiuto reciproco.
                 </p>
                 <div class="images">
-                    <div><img src="/assets/path.webp" class="mobile" alt="" loading="lazy" /></div>
                     <div><img src="/assets/paper.webp" alt="" loading="lazy" /></div>
-                    <div><img src="/assets/pencil.webp" alt="" loading="lazy" /></div>
+                    <div><img src="/assets/path.webp" class="mobile" alt="" loading="lazy" /></div>
+                    <div><img src="/assets/pot.webp" alt="" loading="lazy" /></div>
+                    <div><img src="/assets/game.webp" alt="" loading="lazy" /></div>
                 </div>
             </section>
             <section id="boscando-estate">
@@ -263,8 +279,40 @@
                 </p>
                 <div class="images">
                     <div><img src="/assets/rocks.webp" alt="" loading="lazy" /></div>
-                    <div><img src="/assets/hay.webp" alt="" loading="lazy" /></div>
+                    <div><img src="/assets/water.webp" alt="" loading="lazy" /></div>
                     <div><img src="/assets/piave.webp" class="mobile" alt="" loading="lazy" /></div>
+                </div>
+            </section>
+            <section id="eventi">
+                <h2>Eventi</h2>
+                <h3>Insieme abbiamo costruito la nostra yurta</h3>
+                <p>
+                    È stata davvero una grande avventura la realizzazione di questo progetto che ora ci da modo di avere un luogo che può accoglierci ogni giorno. Grazie al prezioso aiuto di molte, ma davvero molte, persone straordinarie e dopo viaggi chilometrici, calcoli e progetti, idee e tanto impegno, fatica, tanto sole, merende condivise tra angurie fresche, verdura di stagione e pizze, quando possibile all’ombra degli alberi, tra legno e avvitatori, risate e tempo passato insieme, abbiamo finalmente ultimato la costruzione della nostra Yurta.
+                </p>
+                <div class="images">
+                    <div><img src="/assets/construction.webp" class="mobile" alt="" loading="lazy" /></div>
+                    <div><img src="/assets/opening.webp" alt="" loading="lazy" /></div>
+                </div>
+                <h3>La merenda del colmo della nostra yurta</h3>
+                <p>
+                    Finalmente a settembre 2024 abbiamo inaugurato la nostra Yurta, festeggiando insieme con tutti gli amici di Boscando!
+                </p>
+                <div class="images">
+                    <div><img src="/assets/program.webp" class="mobile" alt="" loading="lazy" /></div>
+                    <div><img src="/assets/party.webp" alt="" loading="lazy" /></div>
+                    <div><img src="/assets/cake.webp" class="mobile" alt="" loading="lazy" /></div>
+                </div>
+                <div class="images">
+                    <div><img src="/assets/speech.webp" class="mobile" alt="" loading="lazy" /></div>
+                    <div><img src="/assets/photos.webp" alt="" loading="lazy" /></div>
+                </div>
+                <h3>Iniziamo il nostro viaggio 2024/25</h3>
+                <p>
+                    Ed eccoci pronti per iniziare questo nuovo viaggio! Nel nostro zaino non mancheranno certamente tanti colori, quaderni, libri, giochi, creatività, attività didattiche per ripassare e imparare cose nuove, laboratori, bosco… ma soprattutto tantissime avventure da vivere insieme!
+                </p>
+                <div class="images">
+                    <div><img src="/assets/birthday.webp" class="mobile" alt="" loading="lazy" /></div>
+                    <div><img src="/assets/studying.webp" alt="" loading="lazy" /></div>
                 </div>
             </section>
             <section id="aiutarci">
@@ -276,7 +324,6 @@
                     Vuoi donarci qualcosa di concreto, che magari già possiedi ma che non utilizzi più, ecco cosa ci potrebbe aiutare:<br/>
                     <svg><use href="#flower"/></svg>Piante aromatiche e fiori per il nostro giardino delle erbe<br/>
                     <svg><use href="#toys"/></svg>Giocattoli di legno<br/>
-                    <svg><use href="#lawnmower"/></svg>Tagliaerba<br/>
                     <svg><use href="#tools"/></svg>Attrezzi: trapano, avvitatore, martello, sega elettrica, piccone, pala, rastrelli, …<br/>
                     <svg><use href="#materials"/></svg>Materiali: carta, cartoncini, legname, corde, …<br/>
                 </p>
@@ -284,10 +331,11 @@
                     Hai del tempo che vuoi dedicarci? Potresti proporre qualcosa che sai fare con un laboratorio, un corso o semplicemente venire ad aiutarci come volontario durante le nostre attività. Boscando è un luogo aperto alle nuove idee e ai talenti di ciascuno, ci fa piacere conoscere la proposta che vuoi condividere. Scrivici a <a href="mailto:info@boscando.it">info@boscando.it</a>.
                 </p>
                 <div class="images">
+                    <img src="/assets/paper.webp" class="" alt="" loading="lazy" />
                     <img src="/assets/drawing.webp" class="mobile" alt="" loading="lazy" />
+                    <img src="/assets/inside2.webp" class="mobile" alt="" loading="lazy" />
                     <img src="/assets/leaves.webp" class="mobile" alt="" loading="lazy" />
-                    <img src="/assets/sand.webp" alt="" loading="lazy" />
-                    <img src="/assets/water.webp" class="mobile" alt="" loading="lazy" />
+                    <img src="/assets/mud.webp" class="" alt="" loading="lazy" />
                 </div>
             </section>
         </main>
@@ -295,7 +343,7 @@
             <p>
                 Vieni a trovarci in Ponte Nelle Alpi (BL)! Prendi un appuntamento, così ti dedicheremo il giusto tempo!
                 <br/>
-                <svg><use href="#map"/></svg><a href="https://www.google.com/maps/place/46%C2%B011'51.3%22N+12%C2%B017'03.8%22E/@46.197587,12.2815304,591m/" target="_blank" rel="noopener noreferrer nofollow">46°11'51.3"N 12°17'03.8"E</a>
+                <svg><use href="#map"/></svg><a href="https://maps.app.goo.gl/jvohQGy45Sy5zxXH7" target="_blank" rel="noopener noreferrer nofollow">46°11'51.3"N 12°17'03.8"E</a>
                 <svg><use href="#phone"/></svg><a href="tel:+39 327 068 3837">+39 327 068 3837</a>
                 <svg><use href="#email"/></svg><a href="mailto:info@boscando.it">info@boscando.it</a>
             </p>

@@ -121,6 +121,21 @@
             section > .images + .images {
                 margin-top: 1em;
             }
+            section > .social {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                column-gap: var(--spacing);
+                row-gap: 10px;
+                flex-wrap: wrap;
+                margin-bottom: 1em;
+            }
+            section > .social > a {
+                text-decoration: none;
+                display: flex;
+                align-items: center;
+                gap: 10px;
+            }
             section:nth-child(even) {
                 background-color: var(--even-background-color);
                 color: var(--even-text-color)
@@ -281,6 +296,26 @@
                     <div><img src="/assets/rocks.webp" alt="" loading="lazy" /></div>
                     <div><img src="/assets/water.webp" alt="" loading="lazy" /></div>
                     <div><img src="/assets/piave.webp" class="mobile" alt="" loading="lazy" /></div>
+                </div>
+            </section>
+            <section id="nostri-corsi">
+                <h2>I nostri corsi</h2>
+                <p>
+                    Durante tutto l’anno proponiamo percorsi e laboratori di teatro, musica, arte, incontri culturali e molto altro sia in Jurta sia in natura rivolti a tutte le età. <br />Per maggiori informazioni contattaci e resta sempre aggiornato seguendoci sui nostri canali social.
+                </p>
+                <div class="social">
+                    <a href="https://www.instagram.com/boscando24" target="_blank" rel="noopener noreferrer nofollow">
+                        <img height="40" src="/assets/instagram.svg" alt="" loading="lazy" />
+                        @boscando24
+                    </a>
+                    <a href="https://www.facebook.com/profile.php?id=61560638576982" target="_blank" rel="noopener noreferrer nofollow">
+                        <img height="40" src="/assets/facebook.svg" alt="" loading="lazy" />
+                        Boscando
+                    </a>
+                </div>
+                <div class="images">
+                    <div><img src="/assets/circle-v2.webp" alt="" loading="lazy" /></div>
+                    <div><img src="/assets/markers-v2.webp" class="mobile" alt="" loading="lazy" /></div>
                 </div>
             </section>
             <section id="eventi">
